@@ -1,0 +1,12 @@
+{
+  "name": "typsscript",
+  "version": "1.0.0",
+  "description": "- 설치 방법1: npm을 이용한 설치 (Node.js 패키지 매니저)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

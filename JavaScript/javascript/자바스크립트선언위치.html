@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- script 선언이 좋은 방법. -->
+
+  <!-- 브라우저를 보는데 시간이 많이 걸린다. -->
+  <!-- parsingHTML -> fetching, executing -> pasingHTML -->
+  <!-- <script src="js/print.js"></script> -->
+  <!-- body끝에 사용하는 것보다 낫지만 상황에 따라 다를 수 있다. -->
+  <!-- parsing HTML, fetching -> executing -> parsingHTML -->
+  <!-- <script aync src="js/print.js"></script> -->
+  <!-- 제일 좋은 사용 법 -->
+  <!-- parsing HTML, fetching -> executing -->
+  <script defer src="js/print.js"></script>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <!-- 브라우저가 빨리 띄워지지만 js에 의존이 큰 파일이라면 브라우저의 화면이 늦게 띄워진다. -->
+  <!-- parsing HTML -> fetching, executing -->
+  <!-- <script src="js/print.js"></script> -->
+</body>
+</html>
